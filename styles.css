@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Titillium Web', sans-serif;
+}
+
+#wrapper {
+width: 100%;
+max-width: 1920px;
+min-width: 400px;
+margin: 0 auto;
+}
+
+#header, #conteiner0, #conteiner1, #conteiner2, #conteiner3 {
+display: flex;
+}
+
+#header {
+height: 50px;
+justify-content: center;
+align-items: center;
+}
+
+#conteiner0 {
+background-image: url(images/8.jpg);
+background-size: cover;
+height: 900px;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+}
+
+#conteiner1 img, #conteiner2 img {
+width: 100%;
+} 
+
+.contentA, .contentB {
+width: 50%;
+background-color: #38373c;
+color: white;
+display: flex;
+align-items: center;
+}
+
+#conteiner3 {
+flex-direction: column;
+justify-content: center;
+background-image: url(images/18.jpg);
+background-size: cover;
+height: 800px;
+text-align: center;
+}
+
+#miniBlocksConteiner {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+.miniBlock {
+width: 350px;
+}
+
+#miniBlocksConteiner div {
+background-color: whitesmoke;
+}
+
+#footer {
+background-color: brown;
+align-items: center;
+}
+
+#footer p {
+color: white;
+font-size: 18px;
+}
+
+p {
+font-size: 26px;
+padding: 30px 30px;
+}
+
+.button {
+height: 70px;
+font-size: 22px;
+}
+
+.button a  {
+padding: 15px 25px;
+text-decoration: none;
+color: white;
+background-color: black;
+}
+
+.button a:hover {
+color: black;
+background-color: white;
+border: 4px solid rgb(202, 0, 0);
+}
+
+h1, h2, h3 {
+color: white;
+font-size: 96px;
+margin: 40px 0 110px 0;
+}
+
+#smallMenu {
+display: none;
+}
+
+/* ------------------------------ */
+
+#headMenu a {
+padding: 38px 15px;
+text-decoration: none;
+color: black;
+transition: 0.3s;
+text-align: center;
+font-size: 24px;
+}
+
+#headMenu a:hover, #headMenu a.active {
+color: white;
+background-color: #C7081B;
+}
+/* ---------------------- */
+
+
+
+
+@media (max-width: 1200px){
+    #conteiner0 {
+    background-image: url(images/8small.jpg);
+    height: 800px;
+    }
+
+    #conteiner1 {
+    flex-direction: column-reverse;
+    }
+
+    #conteiner2 {
+    flex-direction: column;
+    }
+
+    .contentA, .contentB {
+    width: 100%;
+    }
+
+    #conteiner3 {
+    height: auto; 
+    }
+
+    #conteiner3 h3 {
+    font-size: 58px;
+    margin: 40px 0 50px 0;
+    }
+
+    #miniBlocksConteiner {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .miniBlock {
+    width: 90%;
+    margin-bottom: 35px;
+    }
+}
+
+
+@media (max-width: 900px){
+
+    #header {
+    justify-content: right;
+    padding-right: 30px;
+    }
+
+    #headMenu {
+    display: none;
+    }
+            
+    #smallMenu {
+    display: block;
+    font-size: 38px;
+    }
+
+    #conteiner0 {
+    height: 500px;
+    }
+
+    #conteiner0 h1 {
+    font-size: 44px;
+    }
+
+    #conteiner3 h3 {
+    font-size: 34px;
+    margin: 40px 0 50px 0;
+    }
+
+    .miniBlock {
+    width: 90%;
+    margin-bottom: 15px;
+    }
+
+    #conteiner0 .button {
+    margin-bottom: 10px !important;
+    }
+}
+
+@media (max-width: 640px) {
+    #conteiner0 {
+    height: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    #conteiner0 {
+    height: 300px;
+    }
+}
